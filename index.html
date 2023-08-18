@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Calculadora gasolina ou álcool" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <title>Calculadora Gasolina ou Álcool</title>
+  </head>
+  <body>
+    <main class="container">
+      <img class="logo" src="./logo.png" alt="logo bomba de combustivel" />
+      <h1 class="title">Qual melhor opção?</h1>
+
+      <form onsubmit="calcular(event)" class="form">
+        <label>Álcool (preço por litro):</label>
+        <input
+          id="alcool"
+          class="input"
+          type="number"
+          placeholder="4.90"
+          min="1"
+          step="0.01"
+          required
+        />
+
+        <label>Gasolina (preço por litro):</label>
+        <input
+          id="gasolina"
+          class="input"
+          type="number"
+          placeholder="6.60"
+          min="1"
+          step="0.01"
+          required
+        />
+
+        <input class="button" type="submit" value="Calcular" />
+      </form>
+
+      <section id="content-result" class="result hide">
+        <span id="text-result">Compensa usar Álcool</span>
+
+        <span id="alcool-result">Álcool R$ 3.90</span>
+        <span id="gasolina-result">Gasolina R$ 6.80</span>
+      </section>
+    </main>
+    <div class="info">
+      <span class="tooltip">Veja como é feito o calculo</span>
+      <a href="calculo.html">
+        <img
+          class="info-img"
+          src="./info.png"
+          alt="Veja como é feito o calculo"
+        />
+      </a>
+    </div>
+    <script src="./javascript/script.js"></script>
+
+    <!--<footer id="rodaPe">
+      <div class="social-media">
+        <div class="instagram">
+          <a href="https://www.instagram.com/j.rodryguez/" target="_blank">
+            <img src="./assets/icons8-instagram-48.png" alt="Instagram" />
+            <span>Instagram</span>
+          </a>
+        </div>
+
+        <div class="twitter">
+          <a href="https://twitter.com/JRodriiiigues" target="_blank">
+            <img src="./assets/icons8-twitter-quadrado-48.png" alt="Twitter" />
+            <span>Twitter</span>
+          </a>
+        </div>
+
+        <div class="github">
+          <a href="https://github.com/Jrodrygues" target="_blank">
+            <img src="./assets/icons8-github-48.png" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/jrodrygues/" target="_blank">
+            <img src="./assets/icons8-linkedin-48.png" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </footer>-->
+  </body>
+</html>
